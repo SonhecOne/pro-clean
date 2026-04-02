@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autres services | Pro-Clean HC INC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">PRO-CLEAN HC INC</a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      
+      <div class="dropdown">
+        <a href="#services" class="dropdown-toggle">Services <small>▼</small></a>
+        <div class="dropdown-menu">
+          <a href="regular-cleaning.html">Entretien ménager régulier</a>
+          <a href="deep-cleaning.html">Grand ménage</a>
+          <a href="window-cleaning.html">Nettoyage de vitres</a>
+          <a href="custom-services.html">Autres services</a>
+        </div>
+      </div>
+
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn-gold">Obtenir une soumission gratuite</a>
+    </div>
+    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Accueil</a>
+    
+    <div class="mobile-dropdown">
+      <p class="mobile-dropdown-label">Nos Services :</p>
+      <a href="regular-cleaning.html" onclick="closeMenu()">- Entretien régulier</a>
+      <a href="deep-cleaning.html" onclick="closeMenu()">- Grand ménage</a>
+      <a href="window-cleaning.html" onclick="closeMenu()">- Nettoyage de vitres</a>
+      <a href="custom-services.html" onclick="closeMenu()">- Autres services</a>
+    </div>
+
+    <a href="#about" onclick="closeMenu()">À propos</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+    <a href="#contact" class="btn-gold" style="text-align:center;margin-top:0.5rem" onclick="closeMenu()">Obtenir une soumission gratuite</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Autres services</h1>
+    <p>Des solutions adaptées à chaque transition de votre vie.</p>
+    <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- INTRO -->
+  <section class="service-block">
+    <div class="content-side">
+      <h2>Envie d'un nouveau départ?</h2>
+      <p>
+        Chez Pro-Clean HC Inc à Québec, nous offrons bien plus que de l'entretien
+        ménager standard. Nos services spécialisés de nettoyage après rénovations
+        et avant ou après déménagement assurent une transition fluide vers votre
+        prochaine étape.
+      </p>
+      <p>
+        Libérez-vous des contraintes et profitez d'un espace impeccablement propre,
+        prêt à accueillir un nouveau chapitre de votre vie.
+      </p>
+
+      <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
+    </div>
+
+    <div class="image-side">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800" alt="Nettoyage professionnel">
+    </div>
+  </section>
+
+  <!-- RENOVATION -->
+  <section class="service-block reverse">
+    <div class="content-side">
+      <h2>Ménage après rénovations et construction</h2>
+      <p>
+        Après avoir transformé votre espace, ne laissez pas la poussière et les
+        débris éclipser la beauté de vos améliorations.
+      </p>
+      <p>
+        Pro-Clean HC vous offre une remise en état impeccable, permettant à votre
+        propriété rénovée de briller de tout son éclat.
+      </p>
+
+      <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
+    </div>
+
+    <div class="image-side">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Nettoyage après rénovation">
+    </div>
+  </section>
+
+  <!-- DEMENAGEMENT -->
+  <section class="service-block">
+    <div class="content-side">
+      <h2>Ménage avant ou après déménagement</h2>
+      <p>
+        Que vous tourniez une page ou en commenciez une nouvelle, notre service de
+        ménage crée l'environnement parfait pour accueillir cette transition.
+      </p>
+      <p>
+        Avant d'arriver dans votre nouveau foyer, ou après avoir quitté l'ancien,
+        nous assurons que chaque recoin reflète propreté et fraîcheur.
+      </p>
+
+      <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
+    </div>
+
+    <div class="image-side">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Déménagement propre">
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="benefits">
+    <div class="benefits-card">
+      <h2>La propreté, le premier pas vers le renouveau</h2>
+      <p>
+        Que ce soit pour effacer les traces du passé ou préparer un nouveau départ,
+        notre équipe adapte ses méthodes pour répondre parfaitement à vos besoins.
+      </p>
+      <p>
+        Faites de votre espace un lieu accueillant, sain et prêt à vivre,
+        sans l’encombrement d’hier.
+      </p>
+
+      <a href="#contact" class="btn-gold-large">CONTACTEZ-NOUS</a>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+
+    <!-- LOGO -->
+    <div class="footer-col">
+      <div class="footer-logo">PRO-CLEAN HC INC</div>
+      <p class="footer-description">
+        Services de nettoyage professionnels résidentiels et commerciaux.
+        Qualité, fiabilité et satisfaction garantie.
+      </p>
+    </div>
+
+    <!-- DIRECCIÓN -->
+    <div class="footer-col">
+      <h4>Adresse</h4>
+      <p>960 rue du Butor</p>
+      <p>Lévis, QC</p>
+      <p>G7A 5M2</p>
+    </div>
+
+    <!-- HORARIOS -->
+    <div class="footer-col">
+      <h4>Heures d’ouverture</h4>
+      <p>Lundi - Samedi</p>
+      <p>8h00 - 17h00</p>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><strong>Hugo Chinchilla</strong><br>(418) 999-0220</p>
+      <p><strong>Paola Castilla  - Administration</strong><br>(418) 951-9012</p>
+      <p>hugochi20@hotmail.com</p>
+    </div>
+
+    <!-- REDES -->
+    <div class="footer-col">
+      <h4>Suivez-nous</h4>
+      <div class="social-links">
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+
+
+
+
+</body>
+</html>

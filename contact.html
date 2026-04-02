@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | PRO-CLEAN HC INC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar scrolled">
+    <div class="container navbar-inner">
+        <a href="index.html" class="logo">PRO-CLEAN <span>HC INC</span></a>
+
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="index.html#services">Services</a>
+            <a href="contact.html" class="btn-gold">Soumission gratuite</a>
+        </div>
+    </div>
+</nav>
+
+<section class="contact-page">
+    <div class="container">
+        <div class="contact-grid">
+
+            <!-- INFO -->
+            <div class="contact-info">
+                <span class="section-label">Contactez-nous</span>
+
+                <h1>
+                    Prêt pour un espace 
+                    <span class="gold-text">étincelant ?</span>
+                </h1>
+
+                <p>
+                    Besoin d'une soumission ou de poser une question ?
+                    Nous sommes là pour vous aider.
+                </p>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <strong>Téléphone & WhatsApp</strong>
+                        <p>(418) 999-0220</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Courriel</strong>
+                        <p>info@serviceproclean.com</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/14189990220?text=Bonjour,%20je%20souhaite%20obtenir%20une%20soumission%20pour%20un%20nettoyage."
+                   class="btn-whatsapp"
+                   target="_blank">
+                   💬 Discutez sur WhatsApp
+                </a>
+            </div>
+
+            <!-- FORM -->
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="contact-form">
+
+                    <div class="form-group">
+                        <label>Nom complet</label>
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Courriel</label>
+                        <input type="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type de service</label>
+                        <select name="service">
+                            <option value="regulier">Entretien régulier</option>
+                            <option value="grand-menage">Grand ménage</option>
+                            <option value="vitres">Nettoyage de vitres</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-gold btn-full">
+                        Envoyer le message
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
