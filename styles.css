@@ -531,8 +531,9 @@ h1, h2, h3 {
 
 /* HERO */
 .hero {
+   
     background: linear-gradient(rgba(10, 29, 55, 0.8), rgba(10, 29, 55, 0.8)), 
-             
+                url('img/limpieza-profunda.jgp');  
     background-size: cover;
     background-position: center;
     color: white;
