@@ -97,11 +97,14 @@
 
 <section class="services" id="services">
   <div class="container">
+
+    <!-- HEADER -->
     <div class="fade-up">
       <span class="section-label">Ce que nous offrons</span>
       <h2 class="section-title">Nos services</h2>
     </div>
 
+    <!-- GRID DE SERVICIOS -->
     <div class="services-grid">
 
       <div class="service-card fade-up">
@@ -143,14 +146,15 @@
         <a href="custom-services.html" class="service-link">En savoir plus →</a>
       </div>
 
-      
-
-
     </div>
+
+    <!-- IMAGEN DESTACADA -->
+    <div class="services-image fade-img">
+      <img src="img/limpieza-de-oficinas.jpg" alt="Nettoyage professionnel">
+    </div>
+
   </div>
 </section>
-
-
 
 
 
@@ -211,12 +215,12 @@
 
 
 
-
-
-
-<!-- WHY CHOOSE US -->
 <section class="service-areas">
-  <div class="container">
+
+  <!-- FONDO -->
+  <div class="areas-bg"></div>
+
+  <div class="container areas-content">
 
     <div class="section-header fade-up">
       <span class="section-label">Zones desservies</span>
@@ -251,8 +255,12 @@
 
   </div>
 </section>
-<!-- CTA -->
+
+
+
+
 <section class="cta-section" id="contact">
+
   <div class="container">
     <div class="cta-box fade-up">
       <h2>Obtenez votre estimation gratuite dès aujourd’hui</h2>
@@ -330,6 +338,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
 }, { threshold: 0.1 });
 
+document.querySelectorAll('.fade-img').forEach(el => observer.observe(el));
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
 
