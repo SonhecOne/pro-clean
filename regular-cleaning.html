@@ -4,83 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entretien ménager régulier | Pro-Clean HC INC</title>
+  <meta name="description" content="Service d'entretien ménager régulier résidentiel et commercial à Lévis. Nettoyage professionnel fiable par Pro-Clean HC INC.">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar" id="navbar">
+<nav class="navbar scrolled" id="navbar">
   <div class="container navbar-inner">
-    <a href="index.html" class="logo">PRO-CLEAN HC INC</a>
+    <a href="index.html" class="logo">PRO-CLEAN <span>HC INC</span></a>
     <div class="nav-links">
       <a href="index.html">Accueil</a>
-      
       <div class="dropdown">
-        <a href="#services" class="dropdown-toggle">Services <small>▼</small></a>
+        <a href="#">Services ▾</a>
         <div class="dropdown-menu">
-          <a href="regular-cleaning.html">Entretien ménager régulier</a>
-          <a href="deep-cleaning.html">Grand ménage</a>
-          <a href="window-cleaning.html">Nettoyage de vitres</a>
-          <a href="custom-services.html">Autres services</a>
+          <a href="entretien-regulier.html">Entretien ménager régulier</a>
+          <a href="grand-menage.html">Grand ménage</a>
+          <a href="nettoyage-vitres.html">Nettoyage de vitres</a>
+          <a href="autres-services.html">Autres services</a>
         </div>
       </div>
-
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn-gold">Obtenir une soumission gratuite</a>
+      <a href="index.html#about">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
     </div>
-    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">&#9776;</button>
   </div>
-
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" onclick="closeMenu()">Accueil</a>
-    
+    <a href="index.html">Accueil</a>
     <div class="mobile-dropdown">
-      <p class="mobile-dropdown-label">Nos Services :</p>
-      <a href="regular-cleaning.html" onclick="closeMenu()">- Entretien régulier</a>
-      <a href="deep-cleaning.html" onclick="closeMenu()">- Grand ménage</a>
-      <a href="window-cleaning.html" onclick="closeMenu()">- Nettoyage de vitres</a>
-      <a href="custom-services.html" onclick="closeMenu()">- Autres services</a>
+      <div class="mobile-dropdown-label">Nos Services :</div>
+      <a href="entretien-regulier.html">Entretien régulier</a>
+      <a href="grand-menage.html">Grand ménage</a>
+      <a href="nettoyage-vitres.html">Nettoyage de vitres</a>
+      <a href="autres-services.html">Autres services</a>
     </div>
-
-    <a href="#about" onclick="closeMenu()">À propos</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-    <a href="#contact" class="btn-gold" style="text-align:center;margin-top:0.5rem" onclick="closeMenu()">Obtenir une soumission gratuite</a>
+    <a href="index.html#about">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container">
-    <h1>Entretien ménager régulier</h1>
-    <p>Un espace toujours propre, sans effort. Service fiable à Lévis et les environs.</p>
-    <a href="#contact" class="btn-gold">DEMANDER UNE SOUMISSION</a>
+<!-- HERO -->
+<section class="service-page-hero">
+  <div class="service-page-hero-bg">
+    <img src="img/hero-cleaning.jpg" alt="Équipe de nettoyage professionnel">
   </div>
-</header>
+  <div class="service-page-hero-overlay"></div>
+  <div class="container service-page-hero-content">
+    <span class="hero-badge fade-up">Service Résidentiel & Commercial</span>
+    <h1 class="fade-up">Entretien ménager <span class="gold-text">régulier</span></h1>
+    <p class="fade-up">Un espace toujours propre, sans effort. Service fiable à Lévis et les environs.</p>
+    <a href="contact.html" class="btn-gold btn-gold-lg fade-up">Demander une soumission</a>
+  </div>
+</section>
 
-<main class="container">
-  
-  <!-- INTRO -->
-  <section class="service-block">
-    <div class="content-side">
+<!-- INTRO + IMAGE -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid">
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">Notre engagement</span>
+        <h2 class="sp-title">Nettoyage régulier, tranquillité d'esprit assurée</h2>
+        <p>L'entretien ménager régulier est la solution idéale pour maintenir votre domicile ou votre bureau à Lévis et ses environs dans un état impeccable.</p>
+        <p>Nous prenons en charge tous les aspects du nettoyage quotidien afin de vous offrir un environnement propre, sain et accueillant en tout temps.</p>
+      </div>
+      <div class="sp-intro-image fade-up">
+        <img src="img/living-room-clean.jpg" alt="Salon propre après nettoyage professionnel" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
 
-      <h2>Nettoyage régulier, tranquillité d'esprit assurée</h2>
-      <p>
-        L'entretien ménager régulier est la solution idéale pour maintenir votre domicile
-        ou votre bureau à Lévis et ses environs dans un état impeccable.
-      </p>
-      <p>
-        Nous prenons en charge tous les aspects du nettoyage quotidien afin de vous offrir
-        un environnement propre, sain et accueillant en tout temps.
-      </p>
+<!-- RÉSIDENTIEL -->
+<section class="sp-section sp-section-gray">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:3rem;">
+      <span class="section-label">🏠 Résidentiel</span>
+      <h2 class="section-title">Un nettoyage complet de votre demeure</h2>
+    </div>
 
-      <!-- RÉSIDENTIEL -->
-      <h2>Résidentiel</h2>
-      <p class="subtitle">Un nettoyage complet de votre demeure</p>
-      
-      <div class="task-grid">
-        <div class="category">
-          <h3><span class="icon">🏠</span> Cuisine</h3>
+    <div class="sp-cards-grid">
+      <!-- Cuisine -->
+      <div class="sp-detail-card fade-up">
+        <div class="sp-detail-card-img">
+          <img src="img/kitchen-clean.jpg" alt="Cuisine propre après nettoyage" loading="lazy">
+        </div>
+        <div class="sp-detail-card-body">
+          <h3>🍳 Cuisine</h3>
           <ul class="check-list">
             <li>Extérieur des cabinets</li>
             <li>Comptoirs et éviers</li>
@@ -89,9 +101,15 @@
             <li>Lave-vaisselle</li>
           </ul>
         </div>
-        
-        <div class="category">
-          <h3><span class="icon">🚿</span> Salles de bain</h3>
+      </div>
+
+      <!-- Salle de bain -->
+      <div class="sp-detail-card fade-up">
+        <div class="sp-detail-card-img">
+          <img src="img/bathroom-clean.jpg" alt="Salle de bain propre après nettoyage" loading="lazy">
+        </div>
+        <div class="sp-detail-card-body">
+          <h3>🚿 Salles de bain</h3>
           <ul class="check-list">
             <li>Cuvette et lavabos</li>
             <li>Douche et baignoire</li>
@@ -100,149 +118,176 @@
           </ul>
         </div>
       </div>
+    </div>
 
-      <div class="extra-tasks">
-        <h3>Services inclus partout :</h3>
-        <ul class="check-list inline">
-          <li>Aspirateur (tapis, sous les lits et meubles)</li>
-          <li>Lavage complet des planchers</li>
+    <!-- Services inclus -->
+    <div class="sp-included fade-up">
+      <h3>✨ Services inclus partout</h3>
+      <div class="sp-included-grid">
+        <div class="sp-included-item">
+          <span>✓</span> Aspirateur (tapis, sous les lits et meubles)
+        </div>
+        <div class="sp-included-item">
+          <span>✓</span> Lavage complet des planchers
+        </div>
+        <div class="sp-included-item">
+          <span>✓</span> Vidange des poubelles
+        </div>
+        <div class="sp-included-item">
+          <span>✓</span> Époussetage général
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BANNIÈRE -->
+<section class="sp-banner">
+  <img src="img/person-cleaning.jpg" alt="Professionnelle nettoyant des vitres" loading="lazy" class="fade-img">
+</section>
+
+<!-- COMMERCIAL -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid sp-intro-reverse">
+      <div class="sp-intro-image fade-up">
+        <img src="img/office-clean.jpg" alt="Bureau propre après nettoyage professionnel" loading="lazy">
+      </div>
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">🏢 Commercial</span>
+        <h2 class="sp-title">Des espaces de travail propres et professionnels</h2>
+        <ul class="check-list">
+          <li>Époussetage complet</li>
+          <li>Aspirateur et nettoyage de bureaux</li>
+          <li>Désinfection des salles de bain</li>
+          <li>Lavage des planchers</li>
           <li>Vidange des poubelles</li>
-          <li>Époussetage général</li>
+          <li>Nettoyage des surfaces et électroménagers</li>
+          <li>Services personnalisés selon vos besoins</li>
         </ul>
       </div>
-
     </div>
+  </div>
+</section>
 
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800" alt="Nettoyage résidentiel">
+<!-- POURQUOI NOUS -->
+<section class="why-us">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="section-label">Nos avantages</span>
+      <h2 class="section-title">Pourquoi nous choisir</h2>
     </div>
-  </section>
-
-  <!-- COMMERCIAL -->
-  <section class="service-block reverse">
-    <div class="content-side">
-      <h2>Commercial</h2>
-      <p class="subtitle">Des espaces de travail propres et professionnels</p>
-
-      <ul class="check-list grid-list">
-        <li>Époussetage complet</li>
-        <li>Aspirateur et nettoyage de bureaux</li>
-        <li>Désinfection des salles de bain</li>
-        <li>Lavage des planchers</li>
-        <li>Vidange des poubelles</li>
-        <li>Nettoyage des surfaces et électroménagers</li>
-        <li>Services personnalisés selon vos besoins</li>
-      </ul>
-    </div>
-
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Nettoyage commercial">
-    </div>
-  </section>
-
-  <!-- POURQUOI NOUS -->
-  <section class="service-block">
-    <div class="content-side">
-      <h2>Pourquoi nous choisir</h2>
-      <ul class="check-list">
-        <li>Équipe professionnelle et fiable</li>
-        <li>Service adapté à vos besoins</li>
-        <li>Produits sécuritaires et efficaces</li>
-        <li>Respect de votre espace et de votre temps</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section class="benefits">
-    <div class="benefits-card">
-      <h2>Brillant et bénéfique</h2>
-      <p>
-        Notre équipe utilise des techniques éprouvées et des <strong>produits écologiques</strong>
-        pour garantir un nettoyage efficace et durable. Nous nous concentrons sur les détails
-        qui font la différence afin de vous offrir un environnement sain et une tranquillité d'esprit totale.
-      </p>
-      <a href="#contact" class="btn-gold-large">OBTENIR MA SOUMISSION</a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-
-    <!-- LOGO -->
-    <div class="footer-col">
-      <div class="footer-logo">PRO-CLEAN HC INC</div>
-      <p class="footer-description">
-        Services de nettoyage professionnels résidentiels et commerciaux.
-        Qualité, fiabilité et satisfaction garantie.
-      </p>
-    </div>
-
-    <!-- DIRECCIÓN -->
-    <div class="footer-col">
-      <h4>Adresse</h4>
-      <p>960 rue du Butor</p>
-      <p>Lévis, QC</p>
-      <p>G7A 5M2</p>
-    </div>
-
-    <!-- HORARIOS -->
-    <div class="footer-col">
-      <h4>Heures d’ouverture</h4>
-      <p>Lundi - Samedi</p>
-      <p>8h00 - 17h00</p>
-    </div>
-
-    <!-- CONTACTO -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p><strong>Hugo Chinchilla</strong><br>(418) 999-0220</p>
-      <p><strong>Paola Castilla  - Administration</strong><br>(418) 951-9012</p>
-      <p>hugochi20@hotmail.com</p>
-    </div>
-
-    <!-- REDES -->
-    <div class="footer-col">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Instagram</a>
-        <a href="#" target="_blank">WhatsApp</a>
+    <div class="why-grid">
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Équipe professionnelle</h3>
+        <p>Personnel formé, fiable et expérimenté.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Service adapté</h3>
+        <p>Solutions personnalisées selon vos besoins.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+        </div>
+        <h3>Produits écologiques</h3>
+        <p>Produits sécuritaires et efficaces.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Respect de votre temps</h3>
+        <p>Ponctualité et discrétion garanties.</p>
       </div>
     </div>
-
   </div>
+</section>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <h2>Brillant et bénéfique</h2>
+      <p>Notre équipe utilise des techniques éprouvées et des produits écologiques pour garantir un nettoyage efficace et durable. Nous nous concentrons sur les détails qui font la différence.</p>
+      <a href="contact.html" class="btn-gold btn-gold-lg">Obtenir ma soumission</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">PRO-CLEAN <span>HC INC</span></div>
+        <p class="footer-description">Services de nettoyage professionnels résidentiels et commerciaux. Qualité, fiabilité et satisfaction garantie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <p>960 rue du Butor</p>
+        <p>Lévis, QC</p>
+        <p>G7A 5M2</p>
+      </div>
+      <div class="footer-col">
+        <h4>Heures d'ouverture</h4>
+        <p>Lundi - Samedi</p>
+        <p>8h00 - 17h00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Hugo Chinchilla — (418) 999-0220</p>
+        <p>Paola Castilla — (418) 951-9012</p>
+        <p>hugochi20@hotmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+    </div>
   </div>
 </footer>
 
-
-
 <script>
+// Mobile menu
+const toggle = document.getElementById('mobileToggle');
+const menu = document.getElementById('mobileMenu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+  toggle.classList.toggle('active');
+  toggle.innerHTML = menu.classList.contains('open') ? '✕' : '☰';
+});
+menu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.classList.remove('active');
+    toggle.innerHTML = '☰';
+  });
+});
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-up, .fade-img').forEach(el => observer.observe(el));
+
+// Navbar scroll
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
 });
-
-function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMenu() {
-  document.getElementById('mobileMenu').classList.remove('open');
-}
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
-
-
-
-
 </body>
 </html>
