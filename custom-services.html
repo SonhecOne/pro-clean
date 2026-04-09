@@ -3,224 +3,328 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autres services | Pro-Clean HC INC</title>
+  <title>Nettoyage après rénovation et déménagement à Lévis | Pro-Clean HC INC</title>
+  <meta name="description" content="Services spécialisés de nettoyage après rénovation, construction et déménagement à Lévis et Québec. Ménage professionnel avant et après déménagement par Pro-Clean HC INC.">
+  <meta name="keywords" content="nettoyage après rénovation Lévis, ménage déménagement Québec, nettoyage post-construction, ménage avant déménagement, nettoyage après construction Lévis, Pro-Clean HC">
+  <link rel="canonical" href="https://proclean-hc.ca/autres-services.html">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Nettoyage après rénovation et déménagement",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Pro-Clean HC INC",
+      "address": { "@type": "PostalAddress", "streetAddress": "960 rue du Butor", "addressLocality": "Lévis", "addressRegion": "QC", "postalCode": "G7A 5M2" },
+      "telephone": "(418) 999-0220"
+    },
+    "areaServed": ["Lévis", "Québec", "Beauport", "Charlesbourg", "Sainte-Foy"]
+  }
+  </script>
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar" id="navbar">
+<nav class="navbar scrolled" id="navbar">
   <div class="container navbar-inner">
-    <a href="index.html" class="logo">PRO-CLEAN HC INC</a>
+    <a href="index.html" class="logo">PRO-CLEAN <span>HC INC</span></a>
     <div class="nav-links">
       <a href="index.html">Accueil</a>
-      
       <div class="dropdown">
-        <a href="#services" class="dropdown-toggle">Services <small>▼</small></a>
+        <a href="#">Services ▾</a>
         <div class="dropdown-menu">
-          <a href="regular-cleaning.html">Entretien ménager régulier</a>
-          <a href="deep-cleaning.html">Grand ménage</a>
-          <a href="window-cleaning.html">Nettoyage de vitres</a>
-          <a href="custom-services.html">Autres services</a>
+          <a href="entretien-regulier.html">Entretien ménager régulier</a>
+          <a href="grand-menage.html">Grand ménage</a>
+          <a href="nettoyage-vitres.html">Nettoyage de vitres</a>
+          <a href="autres-services.html">Autres services</a>
         </div>
       </div>
-
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn-gold">Obtenir une soumission gratuite</a>
+      <a href="index.html#about">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
     </div>
-    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">&#9776;</button>
   </div>
-
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" onclick="closeMenu()">Accueil</a>
-    
+    <a href="index.html">Accueil</a>
     <div class="mobile-dropdown">
-      <p class="mobile-dropdown-label">Nos Services :</p>
-      <a href="regular-cleaning.html" onclick="closeMenu()">- Entretien régulier</a>
-      <a href="deep-cleaning.html" onclick="closeMenu()">- Grand ménage</a>
-      <a href="window-cleaning.html" onclick="closeMenu()">- Nettoyage de vitres</a>
-      <a href="custom-services.html" onclick="closeMenu()">- Autres services</a>
+      <div class="mobile-dropdown-label">Nos Services :</div>
+      <a href="entretien-regulier.html">Entretien régulier</a>
+      <a href="grand-menage.html">Grand ménage</a>
+      <a href="nettoyage-vitres.html">Nettoyage de vitres</a>
+      <a href="autres-services.html">Autres services</a>
     </div>
-
-    <a href="#about" onclick="closeMenu()">À propos</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-    <a href="#contact" class="btn-gold" style="text-align:center;margin-top:0.5rem" onclick="closeMenu()">Obtenir une soumission gratuite</a>
+    <a href="index.html#about">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container">
-    <h1>Autres services</h1>
-    <p>Des solutions adaptées à chaque transition de votre vie.</p>
-    <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
+<!-- HERO -->
+<section class="service-page-hero">
+  <div class="service-page-hero-bg">
+    <img src="img/monumentos-de-canada.jpg" alt="Services spécialisés de nettoyage après rénovation et déménagement par Pro-Clean HC INC">
   </div>
-</header>
+  <div class="service-page-hero-overlay"></div>
+  <div class="container service-page-hero-content">
+    <span class="hero-badge fade-up">Services Spécialisés</span>
+    <h1 class="fade-up">Envie d'un <span class="gold-text">nouveau départ?</span></h1>
+    <p class="fade-up">Nettoyage après rénovations et avant ou après déménagement. Transition fluide vers votre prochaine étape, à Lévis et Québec.</p>
+    <a href="contact.html" class="btn-gold btn-gold-lg fade-up">Contactez-nous</a>
+  </div>
+</section>
 
-<main class="container">
-
-  <!-- INTRO -->
-  <section class="service-block">
-    <div class="content-side">
-      <h2>Envie d'un nouveau départ?</h2>
-      <p>
-        Chez Pro-Clean HC Inc à Québec, nous offrons bien plus que de l'entretien
-        ménager standard. Nos services spécialisés de nettoyage après rénovations
-        et avant ou après déménagement assurent une transition fluide vers votre
-        prochaine étape.
-      </p>
-      <p>
-        Libérez-vous des contraintes et profitez d'un espace impeccablement propre,
-        prêt à accueillir un nouveau chapitre de votre vie.
-      </p>
-
-      <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
-    </div>
-
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800" alt="Nettoyage professionnel">
-    </div>
-  </section>
-
-  <!-- RENOVATION -->
-  <section class="service-block reverse">
-    <div class="content-side">
-      <h2>Ménage après rénovations et construction</h2>
-      <p>
-        Après avoir transformé votre espace, ne laissez pas la poussière et les
-        débris éclipser la beauté de vos améliorations.
-      </p>
-      <p>
-        Pro-Clean HC vous offre une remise en état impeccable, permettant à votre
-        propriété rénovée de briller de tout son éclat.
-      </p>
-
-      <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
-    </div>
-
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Nettoyage après rénovation">
-    </div>
-  </section>
-
-  <!-- DEMENAGEMENT -->
-  <section class="service-block">
-    <div class="content-side">
-      <h2>Ménage avant ou après déménagement</h2>
-      <p>
-        Que vous tourniez une page ou en commenciez une nouvelle, notre service de
-        ménage crée l'environnement parfait pour accueillir cette transition.
-      </p>
-      <p>
-        Avant d'arriver dans votre nouveau foyer, ou après avoir quitté l'ancien,
-        nous assurons que chaque recoin reflète propreté et fraîcheur.
-      </p>
-
-      <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
-    </div>
-
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Déménagement propre">
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="benefits">
-    <div class="benefits-card">
-      <h2>La propreté, le premier pas vers le renouveau</h2>
-      <p>
-        Que ce soit pour effacer les traces du passé ou préparer un nouveau départ,
-        notre équipe adapte ses méthodes pour répondre parfaitement à vos besoins.
-      </p>
-      <p>
-        Faites de votre espace un lieu accueillant, sain et prêt à vivre,
-        sans l’encombrement d’hier.
-      </p>
-
-      <a href="#contact" class="btn-gold-large">CONTACTEZ-NOUS</a>
-    </div>
-  </section>
-
-</main>
-
-
-<footer class="footer">
-  <div class="container footer-inner">
-
-    <!-- LOGO -->
-    <div class="footer-col">
-      <div class="footer-logo">PRO-CLEAN HC INC</div>
-      <p class="footer-description">
-        Services de nettoyage professionnels résidentiels et commerciaux.
-        Qualité, fiabilité et satisfaction garantie.
-      </p>
-    </div>
-
-    <!-- DIRECCIÓN -->
-    <div class="footer-col">
-      <h4>Adresse</h4>
-      <p>960 rue du Butor</p>
-      <p>Lévis, QC</p>
-      <p>G7A 5M2</p>
-    </div>
-
-    <!-- HORARIOS -->
-    <div class="footer-col">
-      <h4>Heures d’ouverture</h4>
-      <p>Lundi - Samedi</p>
-      <p>8h00 - 17h00</p>
-    </div>
-
-    <!-- CONTACTO -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p><strong>Hugo Chinchilla</strong><br>(418) 999-0220</p>
-      <p><strong>Paola Castilla  - Administration</strong><br>(418) 951-9012</p>
-      <p>hugochi20@hotmail.com</p>
-    </div>
-
-    <!-- REDES -->
-    <div class="footer-col">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Instagram</a>
-        <a href="#" target="_blank">WhatsApp</a>
+<!-- INTRO -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid">
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">Nos services spécialisés</span>
+        <h2 class="sp-title">Bien plus que de l'entretien ménager standard</h2>
+        <p>Chez Pro-Clean HC Inc à Québec, nous offrons bien plus que de l'entretien ménager standard. Nos services spécialisés de nettoyage après rénovations et avant ou après déménagement assurent une transition fluide vers votre prochaine étape.</p>
+        <p>Libérez-vous des contraintes et profitez d'un espace impeccablement propre, prêt à accueillir un nouveau chapitre de votre vie. Que ce soit pour une propriété résidentielle ou commerciale, notre équipe s'adapte à vos besoins spécifiques.</p>
+        <p>Nous comprenons que ces moments de transition sont souvent stressants. C'est pourquoi nous prenons en charge l'ensemble du nettoyage pour que vous puissiez vous concentrer sur ce qui compte vraiment.</p>
+      </div>
+      <div class="sp-intro-image fade-up">
+        <img src="img/clean-result.jpg" alt="Espace impeccablement propre après nettoyage professionnel" loading="lazy">
       </div>
     </div>
-
   </div>
+</section>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+<!-- MÉNAGE APRÈS RÉNOVATIONS -->
+<section class="sp-section sp-section-gray">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:3rem;">
+      <span class="section-label">🏗️ Post-rénovation</span>
+      <h2 class="section-title">Ménage après rénovations et construction</h2>
+      <p style="max-width:650px; margin:1rem auto 0; color:var(--gray-500);">Après avoir transformé votre espace, ne laissez pas la poussière et les débris éclipser la beauté de vos améliorations.</p>
+    </div>
+
+    <div class="sp-cards-grid">
+      <div class="sp-detail-card fade-up">
+        <div class="sp-detail-card-img">
+          <img src="img/renovation-cleaning.jpg" alt="Équipe de nettoyage professionnel après rénovation" loading="lazy">
+        </div>
+        <div class="sp-detail-card-body">
+          <h3>🧹 Ce que nous nettoyons</h3>
+          <ul class="check-list">
+            <li>Élimination de la poussière de construction sur toutes les surfaces</li>
+            <li>Nettoyage des résidus de peinture, plâtre et ciment</li>
+            <li>Aspiration et lavage complet des planchers</li>
+            <li>Nettoyage des fenêtres et cadres souillés</li>
+            <li>Désinfection des salles de bain et cuisine</li>
+            <li>Nettoyage des bouches d'aération et grilles</li>
+            <li>Élimination des débris et résidus de matériaux</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sp-detail-card fade-up">
+        <div class="sp-detail-card-img">
+          <img src="img/detail-cleaning.jpg" alt="Nettoyage minutieux des surfaces après construction" loading="lazy">
+        </div>
+        <div class="sp-detail-card-body">
+          <h3>✨ Pourquoi c'est essentiel</h3>
+          <ul class="check-list">
+            <li>La poussière de construction peut affecter la qualité de l'air</li>
+            <li>Les résidus chimiques nécessitent des produits adaptés</li>
+            <li>Un nettoyage professionnel protège vos nouvelles finitions</li>
+            <li>Mise en valeur immédiate de vos rénovations</li>
+            <li>Élimination des allergènes et particules fines</li>
+            <li>Résultat prêt à habiter dès la fin du nettoyage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNIÈRE IMAGE -->
+<section class="sp-banner">
+  <img src="img/moving-cleaning.jpg" alt="Appartement propre et prêt pour un déménagement" loading="lazy" class="fade-img">
+</section>
+
+<!-- MÉNAGE DÉMÉNAGEMENT -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid sp-intro-reverse">
+      <div class="sp-intro-image fade-up">
+        <img src="img/living-room-clean.jpg" alt="Salon impeccablement propre pour accueillir de nouveaux résidents" loading="lazy">
+      </div>
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">📦 Déménagement</span>
+        <h2 class="sp-title">Ménage avant ou après déménagement</h2>
+        <p>Que vous tourniez une page ou en commenciez une nouvelle, notre service de ménage crée l'environnement parfait pour accueillir cette transition.</p>
+        <p>Avant d'arriver dans votre nouveau foyer, ou après avoir quitté l'ancien, nous assurons que chaque recoin reflète propreté et fraîcheur. Un espace propre est le meilleur cadeau que vous puissiez vous offrir lors d'un déménagement.</p>
+        <ul class="check-list">
+          <li>Nettoyage complet avant l'emménagement dans votre nouveau logement</li>
+          <li>Ménage de fin de bail pour récupérer votre dépôt</li>
+          <li>Nettoyage en profondeur de la cuisine et des salles de bain</li>
+          <li>Lavage des planchers, murs et plinthes</li>
+          <li>Nettoyage de l'intérieur des armoires et placards</li>
+          <li>Désinfection complète de toutes les surfaces de contact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION SEO : CONTENU ADDITIONNEL -->
+<section class="sp-section sp-section-gray">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:2.5rem;">
+      <span class="section-label">Guide complet</span>
+      <h2 class="section-title">La propreté, le premier pas vers le renouveau</h2>
+    </div>
+    <div class="sp-seo-content fade-up">
+      <div class="sp-seo-col">
+        <h3>Nettoyage après rénovation : une étape indispensable</h3>
+        <p>Les travaux de rénovation génèrent une quantité importante de poussière fine qui s'infiltre dans les moindres recoins de votre propriété. Cette poussière de construction contient souvent des particules de plâtre, de bois et de composés chimiques qui peuvent irriter les voies respiratoires et provoquer des allergies.</p>
+        <p>Un nettoyage professionnel après rénovation ne se limite pas à un simple coup de balai. Il implique l'utilisation d'aspirateurs industriels avec filtres HEPA, de produits dégraissants adaptés aux résidus de construction, et de techniques spécifiques pour protéger vos nouvelles surfaces tout en éliminant chaque trace de travaux.</p>
+        <h3>Quand faire appel à nos services ?</h3>
+        <p>Après la fin des travaux de rénovation majeurs ou mineurs, après une construction neuve, lors de la réfection de planchers, après des travaux de peinture, ou suite à l'installation de nouvelles armoires de cuisine. Plus tôt vous nettoyez après les travaux, plus facile sera l'élimination des résidus.</p>
+      </div>
+      <div class="sp-seo-col">
+        <h3>Le ménage de déménagement : pourquoi est-ce si important ?</h3>
+        <p>Au Québec, les propriétaires et locataires sont tenus de remettre un logement en état de propreté acceptable lors du départ. Un ménage professionnel de fin de bail vous assure de récupérer votre dépôt de garantie et d'éviter toute friction avec votre ancien propriétaire.</p>
+        <p>Pour ceux qui emménagent dans un nouveau logement, un nettoyage en profondeur avant l'installation garantit un environnement sain et hygiénique pour votre famille. C'est l'occasion de désinfecter toutes les surfaces de contact, de nettoyer l'intérieur des armoires où vous rangerez vos effets personnels, et de partir sur des bases propres.</p>
+        <h3>Notre engagement envers la communauté de Lévis et Québec</h3>
+        <p>Basés à Lévis, nous desservons toute la Rive-Sud et la grande région de Québec, incluant Beauport, Charlesbourg, Sainte-Foy, Cap-Rouge, Saint-Romuald, Saint-Nicolas et les environs. Notre connaissance du marché immobilier local nous permet d'offrir un service parfaitement adapté aux exigences des propriétaires et gestionnaires de la région.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES ADDITIONNELS -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid">
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">Services sur mesure</span>
+        <h2 class="sp-title">Des solutions adaptées à chaque situation</h2>
+        <p>Que ce soit pour effacer les traces du passé ou préparer un nouveau départ, notre équipe adapte ses méthodes pour répondre parfaitement à vos besoins. Faites de votre espace un lieu accueillant, sain et prêt à vivre, sans l'encombrement d'hier.</p>
+        <p>Chaque projet est unique. Nous effectuons une évaluation gratuite de vos besoins avant de commencer, afin de vous proposer un plan de nettoyage personnalisé et un prix transparent, sans surprise.</p>
+        <ul class="check-list">
+          <li>Évaluation gratuite et soumission détaillée</li>
+          <li>Horaires flexibles, y compris les fins de semaine</li>
+          <li>Équipement professionnel et produits écologiques</li>
+          <li>Service rapide pour les situations urgentes</li>
+          <li>Satisfaction garantie à 100%</li>
+        </ul>
+      </div>
+      <div class="sp-intro-image fade-up">
+        <img src="img/person-cleaning.jpg" alt="Professionnelle de nettoyage Pro-Clean HC en action" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS CHOISIR -->
+<section class="why-us">
+  <div class="container">
+    <span class="section-label">Notre différence</span>
+    <h2 class="section-title">Pourquoi choisir Pro-Clean HC ?</h2>
+    <div class="why-grid">
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+        </div>
+        <h3>Expertise spécialisée</h3>
+        <p>Formés pour le nettoyage post-rénovation et les transitions immobilières.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Produits sécuritaires</h3>
+        <p>Solutions écologiques adaptées à chaque type de surface et de résidu.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Équipe fiable</h3>
+        <p>Personnel expérimenté, ponctuel et respectueux de votre propriété.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Disponibilité rapide</h3>
+        <p>Service d'urgence disponible pour les transitions pressantes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <h2>Une transparence parfaite, sans effort</h2>
+      <p>Faites confiance à Pro-Clean HC INC pour un nouveau départ impeccable. Nettoyage après rénovation ou déménagement — soumission gratuite et sans engagement.</p>
+      <a href="contact.html" class="btn-gold btn-gold-lg">Contactez-nous</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">PRO-CLEAN <span>HC INC</span></div>
+        <p class="footer-description">Services de nettoyage professionnels résidentiels et commerciaux. Qualité, fiabilité et satisfaction garantie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <p>960 rue du Butor</p>
+        <p>Lévis, QC</p>
+        <p>G7A 5M2</p>
+      </div>
+      <div class="footer-col">
+        <h4>Heures d'ouverture</h4>
+        <p>Lundi - Samedi</p>
+        <p>8h00 - 17h00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Hugo Chinchilla — (418) 999-0220</p>
+        <p>Paola Castilla — (418) 951-9012</p>
+        <p>hugochi20@hotmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+    </div>
   </div>
 </footer>
 
-
-
 <script>
-window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-});
+  const toggle = document.getElementById('mobileToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
 
-function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMenu() {
-  document.getElementById('mobileMenu').classList.remove('open');
-}
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up, .fade-img').forEach(el => obs.observe(el));
 </script>
-
-
-
-
 
 </body>
 </html>
