@@ -5,6 +5,7 @@
 
 :root {
   --navy: #1e2538;
+  --nava: #ffffff;
   --navy-light: #86b4ff;
   --gold: #d4af37;
   --gold-light: #e0c35c;
@@ -26,8 +27,8 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  color: var(--navy);
-  background: var(--white);
+  color: var(--nava);
+  background: var(--nava);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -232,8 +233,22 @@ img { max-width: 100%; display: block; }
 }
 .section-title {
   font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 700;
+  color: var(--nava); text-align: center; margin: 0.75rem 0 1.5rem;
+}
+.section-title2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 700;
   color: var(--navy); text-align: center; margin: 0.75rem 0 1.5rem;
 }
+
+
+
+
+.section-subtitle {
+  font-size: times(1.75rem, 3vw, 2.5rem); font-weight: 15;
+  color: var(--nava); text-align: center; 
+
+
+  }
 
 /* ===== SERVICE PAGE SECTIONS ===== */
 .sp-section { padding: 5rem 0; }
@@ -416,9 +431,9 @@ img { max-width: 100%; display: block; }
 }
 .areas-bg::before {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(120deg, #0f172a, #1e293b, #0ea5e9, #1e293b, #0f172a);
+  background: linear-gradient(120deg, #47ff84, #00ffb3, #0ea5e9, #92bcff, #80a6ff);
   background-size: 300% 300%;
-  animation: gradientMove 15s ease infinite; opacity: 0.4;
+  animation: gradientMove 5s ease infinite; opacity: 0.4;
 }
 .areas-bg::after {
   content: ""; position: absolute; inset: 0;
