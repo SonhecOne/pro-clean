@@ -3,229 +3,327 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nettoyage de vitres | Pro-Clean HC INC</title>
+  <title>Nettoyage de vitres professionnel à Lévis | Pro-Clean HC INC</title>
+  <meta name="description" content="Service professionnel de nettoyage de vitres résidentiel à Lévis et Québec. Fenêtres impeccables, sans traces, par Pro-Clean HC INC. Soumission gratuite.">
+  <meta name="keywords" content="nettoyage vitres Lévis, lavage fenêtres Québec, nettoyage vitres professionnel, lavage vitres résidentiel, Pro-Clean HC">
+  <link rel="canonical" href="https://proclean-hc.ca/nettoyage-vitres.html">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Nettoyage de vitres",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Pro-Clean HC INC",
+      "address": { "@type": "PostalAddress", "streetAddress": "960 rue du Butor", "addressLocality": "Lévis", "addressRegion": "QC", "postalCode": "G7A 5M2" },
+      "telephone": "(418) 999-0220"
+    },
+    "areaServed": ["Lévis", "Québec", "Beauport", "Charlesbourg", "Sainte-Foy"]
+  }
+  </script>
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar" id="navbar">
+<nav class="navbar scrolled" id="navbar">
   <div class="container navbar-inner">
-    <a href="index.html" class="logo">PRO-CLEAN HC INC</a>
+    <a href="index.html" class="logo">PRO-CLEAN <span>HC INC</span></a>
     <div class="nav-links">
       <a href="index.html">Accueil</a>
-      
       <div class="dropdown">
-        <a href="#services" class="dropdown-toggle">Services <small>▼</small></a>
+        <a href="#">Services ▾</a>
         <div class="dropdown-menu">
-          <a href="regular-cleaning.html">Entretien ménager régulier</a>
-          <a href="deep-cleaning.html">Grand ménage</a>
-          <a href="window-cleaning.html">Nettoyage de vitres</a>
-          <a href="custom-services.html">Autres services</a>
+          <a href="entretien-regulier.html">Entretien ménager régulier</a>
+          <a href="grand-menage.html">Grand ménage</a>
+          <a href="nettoyage-vitres.html">Nettoyage de vitres</a>
+          <a href="autres-services.html">Autres services</a>
         </div>
       </div>
-
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn-gold">Obtenir une soumission gratuite</a>
+      <a href="index.html#about">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
     </div>
-    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">&#9776;</button>
   </div>
-
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" onclick="closeMenu()">Accueil</a>
-    
+    <a href="index.html">Accueil</a>
     <div class="mobile-dropdown">
-      <p class="mobile-dropdown-label">Nos Services :</p>
-      <a href="regular-cleaning.html" onclick="closeMenu()">- Entretien régulier</a>
-      <a href="deep-cleaning.html" onclick="closeMenu()">- Grand ménage</a>
-      <a href="window-cleaning.html" onclick="closeMenu()">- Nettoyage de vitres</a>
-      <a href="custom-services.html" onclick="closeMenu()">- Autres services</a>
+      <div class="mobile-dropdown-label">Nos Services :</div>
+      <a href="entretien-regulier.html">Entretien régulier</a>
+      <a href="grand-menage.html">Grand ménage</a>
+      <a href="nettoyage-vitres.html">Nettoyage de vitres</a>
+      <a href="autres-services.html">Autres services</a>
     </div>
-
-    <a href="#about" onclick="closeMenu()">À propos</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-    <a href="#contact" class="btn-gold" style="text-align:center;margin-top:0.5rem" onclick="closeMenu()">Obtenir une soumission gratuite</a>
+    <a href="index.html#about">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container">
-    <h1>Nettoyage de vitres</h1>
-    <p>Une clarté parfaite pour une luminosité incomparable.</p>
-    <a href="#contact" class="btn-gold">CONTACTEZ-NOUS</a>
+<!-- HERO -->
+<section class="service-page-hero">
+  <div class="service-page-hero-bg">
+    <img src="img/bannerve.jpg" alt="Nettoyage professionnel de vitres à Lévis par Pro-Clean HC INC">
   </div>
-</header>
+  <div class="service-page-hero-overlay"></div>
+  <div class="container service-page-hero-content">
+    <span class="hero-badge fade-up">Service Résidentiel</span>
+    <h1 class="fade-up">Nettoyage de <span class="gold-text">vitres</span></h1>
+    <p class="fade-up">Une clarté parfaite pour une luminosité incomparable. Desservant Lévis, Québec et les environs.</p>
+    <a href="contact.html" class="btn-gold btn-gold-lg fade-up">Contactez-nous</a>
+  </div>
+</section>
 
-<main class="container">
-  
-  <!-- INTRO -->
-  <section class="service-block">
-    <div class="content-side">
+<!-- INTRO -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid">
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">Notre expertise</span>
+        <h2 class="sp-title">Vue imprenable, maison impeccable</h2>
+        <p>Desservant Québec et ses alentours, Pro-Clean HC transforme vos vitres en véritables fenêtres sur le monde. Notre expertise garantit une transparence sans égale et une luminosité optimale dans votre espace.</p>
+        <p>Parce que chaque jour mérite d'être baigné de lumière naturelle, nous vous offrons un service professionnel, minutieux et efficace. Des vitres propres ne sont pas seulement esthétiques — elles améliorent votre qualité de vie et la valeur de votre propriété.</p>
+        <p>Que vous habitiez à Lévis, Québec, Beauport, Charlesbourg ou Sainte-Foy, notre équipe se déplace chez vous pour un résultat impeccable, garanti sans traces.</p>
+      </div>
+      <div class="sp-intro-image fade-up">
+        <img src="img/venta2.jpg" alt="Lumière naturelle traversant des fenêtres parfaitement propres" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
 
-      <h2>Vue imprenable, maison impeccable</h2>
-      <p>
-        Desservant Québec et ses alentours, Pro-Clean HC transforme vos vitres
-        en véritables fenêtres sur le monde. Notre expertise garantit une transparence
-        sans égale et une luminosité optimale dans votre espace.
-      </p>
-      <p>
-        Parce que chaque jour mérite d’être baigné de lumière naturelle,
-        nous vous offrons un service professionnel, minutieux et efficace.
-      </p>
+<!-- SERVICES RÉSIDENTIELS -->
+<section class="sp-section sp-section-gray">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:3rem;">
+      <span class="section-label">✨ Illuminez votre quotidien</span>
+      <h2 class="section-title">Nos services résidentiels de nettoyage de vitres</h2>
+      <p style="max-width:650px; margin:1rem auto 0; color:var(--gray-500);">Profitez d'un environnement plus lumineux et accueillant grâce à un nettoyage de vitres réalisé avec précision et souci du détail.</p>
+    </div>
 
-      <h2>Illuminez votre quotidien</h2>
-      <p>
-        Profitez d’un environnement plus lumineux et accueillant grâce à un nettoyage
-        de vitres réalisé avec précision et souci du détail.
-      </p>
+    <div class="sp-cards-grid">
+      <!-- Services inclus -->
+      <div class="sp-detail-card fade-up">
+        <div class="sp-detail-card-img">
+          <img src="img/includ.jpg" alt="Nettoyage professionnel de vitre avec raclette" loading="lazy">
+        </div>
+        <div class="sp-detail-card-body">
+          <h3>🪟 Services inclus</h3>
+          <ul class="check-list">
+            <li>Lavage de vitres et fenêtres intérieures et extérieures</li>
+            <li>Nettoyage des moustiquaires et des cadrages</li>
+            <li>Nettoyage en hauteur avec équipement professionnel</li>
+            <li>Élimination des résidus, taches d'eau et dépôts minéraux</li>
+            <li>Polissage final sans traces pour une clarté parfaite</li>
+          </ul>
+        </div>
+      </div>
 
-      <!-- SERVICES -->
-      <h2>Nos services résidentiels inclus</h2>
+      <!-- Types de fenêtres -->
+      <div class="sp-detail-card fade-up">
+        <div class="sp-detail-card-img">
+          <img src="img/edif.jpg" alt="Différents types de fenêtres résidentielles propres" loading="lazy">
+        </div>
+        <div class="sp-detail-card-body">
+          <h3>🏠 Types de fenêtres</h3>
+          <ul class="check-list">
+            <li>Fenêtres à manivelle</li>
+            <li>Fenêtres coulissantes</li>
+            <li>Fenêtres simples et doubles</li>
+            <li>Fenêtres françaises</li>
+            <li>Fenêtres à guillotine</li>
+            <li>Fenêtres à formes géométriques</li>
+            <li>Portes-patio et portes vitrées</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <ul class="check-list">
-        <li>Lavage de vitres et fenêtres intérieures et extérieures</li>
-        <li>Nettoyage des moustiquaires et des cadrages</li>
-        <li>Nettoyage en hauteur</li>
-      </ul>
+<!-- IMAGE BANNIÈRE -->
+<section class="sp-banner">
+  <img src="img/facha2.png" alt="Maison résidentielle avec fenêtres impeccablement propres" loading="lazy" class="fade-img">
+</section>
 
-      <div class="extra-tasks">
-        <h3>Types de fenêtres que nous nettoyons :</h3>
-        <ul class="check-list inline">
-          <li>Fenêtres à manivelle</li>
-          <li>Fenêtres coulissantes</li>
-          <li>Fenêtres simples et doubles</li>
-          <li>Fenêtres françaises</li>
-          <li>Fenêtres à guillotine</li>
-          <li>Fenêtres à formes géométriques</li>
-          <li>Portes-patio</li>
+<!-- AVANTAGES DU NETTOYAGE -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid sp-intro-reverse">
+      <div class="sp-intro-image fade-up">
+        <img src="img/empresa.jpeg" alt="Technique professionnelle de nettoyage de vitres" loading="lazy">
+      </div>
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">Les bénéfices</span>
+        <h2 class="sp-title">La clarté au-delà des attentes</h2>
+        <p>Un nettoyage professionnel de vitres ne se limite pas à l'esthétique. Il permet également de prolonger la durée de vie de vos fenêtres en éliminant les résidus corrosifs et en protégeant les surfaces contre les éléments naturels comme la pluie acide, le pollen et la poussière.</p>
+        <p>De plus, des fenêtres propres améliorent considérablement la luminosité naturelle de votre intérieur, ce qui contribue à réduire votre consommation d'énergie en diminuant le besoin d'éclairage artificiel pendant la journée.</p>
+        <ul class="check-list">
+          <li>Amélioration de la luminosité intérieure jusqu'à 30%</li>
+          <li>Protection contre l'usure prématurée et les dépôts</li>
+          <li>Résultat impeccable et sans traces garanti</li>
+          <li>Valorisation de votre propriété à long terme</li>
+          <li>Meilleure efficacité énergétique de votre domicile</li>
         </ul>
       </div>
-
     </div>
+  </div>
+</section>
 
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800" alt="Nettoyage de vitres">
+<!-- SECTION SEO : POURQUOI NETTOYER SES VITRES -->
+<section class="sp-section sp-section-gray">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom:2.5rem;">
+      <span class="section-label">Guide pratique</span>
+      <h2 class="section-title">Pourquoi faire appel à un professionnel pour vos vitres ?</h2>
     </div>
-  </section>
-
-  <!-- BENEFICIOS -->
-  <section class="service-block reverse">
-    <div class="content-side">
-      <h2>La clarté au-delà des attentes</h2>
-      <p>
-        Un nettoyage professionnel ne se limite pas à l’esthétique. Il permet également
-        de prolonger la durée de vie de vos vitres en éliminant les résidus et en
-        protégeant les surfaces contre les éléments.
-      </p>
-      <p>
-        De plus, des fenêtres propres améliorent la luminosité naturelle et contribuent
-        à l’efficacité énergétique de votre domicile.
-      </p>
-
-      <ul class="check-list">
-        <li>Amélioration de la luminosité intérieure</li>
-        <li>Protection contre l’usure et les dépôts</li>
-        <li>Résultat impeccable et sans traces</li>
-        <li>Valorisation de votre propriété</li>
-      </ul>
-    </div>
-
-    <div class="image-side">
-      <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800" alt="Fenêtres propres">
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="benefits">
-    <div class="benefits-card">
-      <h2>Une transparence parfaite, sans effort</h2>
-      <p>
-        Faites confiance à Pro-Clean HC INC pour redonner éclat et clarté à vos vitres.
-        Chaque détail est pris en compte pour garantir une satisfaction totale.
-      </p>
-      <a href="#contact" class="btn-gold-large">CONTACTEZ-NOUS</a>
-    </div>
-  </section>
-
-</main>
-
-
-<footer class="footer">
-  <div class="container footer-inner">
-
-    <!-- LOGO -->
-    <div class="footer-col">
-      <div class="footer-logo">PRO-CLEAN HC INC</div>
-      <p class="footer-description">
-        Services de nettoyage professionnels résidentiels et commerciaux.
-        Qualité, fiabilité et satisfaction garantie.
-      </p>
-    </div>
-
-    <!-- DIRECCIÓN -->
-    <div class="footer-col">
-      <h4>Adresse</h4>
-      <p>960 rue du Butor</p>
-      <p>Lévis, QC</p>
-      <p>G7A 5M2</p>
-    </div>
-
-    <!-- HORARIOS -->
-    <div class="footer-col">
-      <h4>Heures d’ouverture</h4>
-      <p>Lundi - Samedi</p>
-      <p>8h00 - 17h00</p>
-    </div>
-
-    <!-- CONTACTO -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p><strong>Hugo Chinchilla</strong><br>(418) 999-0220</p>
-      <p><strong>Paola Castilla  - Administration</strong><br>(418) 951-9012</p>
-      <p>hugochi20@hotmail.com</p>
-    </div>
-
-    <!-- REDES -->
-    <div class="footer-col">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Instagram</a>
-        <a href="#" target="_blank">WhatsApp</a>
+    <div class="sp-seo-content fade-up">
+      <div class="sp-seo-col">
+        <h3>Un résultat que le nettoyage maison ne peut égaler</h3>
+        <p>Les produits commerciaux vendus en épicerie laissent souvent des résidus chimiques qui créent un voile sur le verre. Notre équipe utilise des solutions professionnelles biodégradables et des techniques de raclette qui garantissent un fini cristallin, sans traces ni stries.</p>
+        <p>De plus, le nettoyage des fenêtres en hauteur ou difficiles d'accès nécessite un équipement spécialisé et une formation en sécurité que seuls les professionnels possèdent.</p>
+      </div>
+      <div class="sp-seo-col">
+        <h3>Un investissement qui protège votre maison</h3>
+        <p>Les dépôts minéraux, les résidus de pollen et la saleté accumulée peuvent endommager le verre de façon permanente avec le temps. Un nettoyage régulier par des professionnels prévient ces dommages coûteux et maintient l'intégrité de vos fenêtres.</p>
+        <p>Au Québec, les changements de saison — neige, pluie verglaçante, chaleur estivale — sollicitent particulièrement vos vitres. Un entretien professionnel saisonnier est la meilleure façon de les protéger.</p>
       </div>
     </div>
-
   </div>
+</section>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+<!-- SECTION SEO : FRÉQUENCE -->
+<section class="sp-section">
+  <div class="container">
+    <div class="sp-intro-grid">
+      <div class="sp-intro-text fade-up">
+        <span class="section-label">Conseils d'experts</span>
+        <h2 class="sp-title">À quelle fréquence nettoyer vos vitres ?</h2>
+        <p>Pour maintenir une clarté optimale, nous recommandons un nettoyage professionnel de vos vitres <strong>au minimum deux fois par année</strong> — idéalement au printemps et à l'automne. Cependant, plusieurs facteurs peuvent nécessiter un nettoyage plus fréquent :</p>
+        <ul class="check-list">
+          <li>Proximité d'arbres ou de zones de construction</li>
+          <li>Exposition aux vents dominants et à la poussière</li>
+          <li>Présence d'animaux domestiques (traces sur les vitres basses)</li>
+          <li>Maisons situées près de routes passantes</li>
+          <li>Fenêtres orientées sud recevant plus de chaleur et de dépôts</li>
+        </ul>
+        <p style="margin-top:1.5rem;">Notre équipe peut établir un calendrier d'entretien personnalisé selon votre situation. <a href="contact.html" style="color:var(--gold); font-weight:600;">Contactez-nous</a> pour une évaluation gratuite.</p>
+      </div>
+      <div class="sp-intro-image fade-up">
+        <img src="img/facha.jpg" alt="Intérieur lumineux grâce à des fenêtres propres" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="why-us">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="section-label">Nos avantages</span>
+      <h2 class="section-title">Pourquoi choisir Pro-Clean HC pour vos vitres</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+        </div>
+        <h3>Résultat sans traces</h3>
+        <p>Techniques professionnelles garantissant une clarté cristalline.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Produits écologiques</h3>
+        <p>Solutions biodégradables respectueuses de l'environnement.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Équipe expérimentée</h3>
+        <p>Personnel formé pour tous types de fenêtres et hauteurs.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Service ponctuel</h3>
+        <p>Respect des rendez-vous et travail efficace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <h2>Une transparence parfaite, sans effort</h2>
+      <p>Faites confiance à Pro-Clean HC INC pour redonner éclat et clarté à vos vitres. Chaque détail est pris en compte pour garantir une satisfaction totale. Soumission gratuite et sans engagement.</p>
+      <a href="contact.html" class="btn-gold btn-gold-lg">Contactez-nous</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">PRO-CLEAN <span>HC INC</span></div>
+        <p class="footer-description">Services de nettoyage professionnels résidentiels et commerciaux. Qualité, fiabilité et satisfaction garantie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <p>960 rue du Butor</p>
+        <p>Lévis, QC</p>
+        <p>G7A 5M2</p>
+      </div>
+      <div class="footer-col">
+        <h4>Heures d'ouverture</h4>
+        <p>Lundi - Samedi</p>
+        <p>8h00 - 17h00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Hugo Chinchilla — (418) 999-0220</p>
+        <p>Paola Castilla — (418) 951-9012</p>
+        <p>hugochi20@hotmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+    </div>
   </div>
 </footer>
 
-
 <script>
-window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-});
+  const toggle = document.getElementById('mobileToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
 
-function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMenu() {
-  document.getElementById('mobileMenu').classList.remove('open');
-}
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up, .fade-img').forEach(el => obs.observe(el));
 </script>
-
-
-
 
 </body>
 </html>
