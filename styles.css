@@ -515,7 +515,7 @@ img { max-width: 100%; display: block; }
 .form-group select {
   width: 100%; padding: 12px; border-radius: 6px;
   border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.05); color: white;
+  background: rgba(255,255,255,0.05); color: grey;
   font-family: var(--font-body);
 }
 .btn-full { width: 100%; cursor: pointer; }
