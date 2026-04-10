@@ -436,6 +436,54 @@ img {
 .client { font-size: 0.85rem; color: var(--gray-500); }
 .client strong { display: block; color: var(--navy); }
 
+
+
+
+/* COMILLAS DECORATIVAS */
+.testimonial-card::before,
+.testimonial-card::after {
+  position: absolute;
+  font-size: 5rem;
+  color: rgba(0,0,0,0.05); /* suave, elegante */
+  font-family: serif;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.testimonial-card::before {
+  content: "“";
+  top: 20px;
+  left: 2px;
+}
+
+.testimonial-card::after {
+  content: "”";
+  bottom: 2px;
+  right: 2px;
+}
+
+.stars {
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.client {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+.client strong {
+  display: block;
+  color: var(--navy);
+}
+
+
+
+
+
+
+
+
 /* ===== SERVICE AREAS ===== */
 .service-areas {
   position: relative;
