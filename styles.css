@@ -225,6 +225,16 @@ img { max-width: 100%; display: block; }
 }
 .fade-img.visible { opacity: 1; transform: translateY(0); }
 
+
+/*=====seccion nueva negro*/
+
+.section1{
+  font-size: times(1.75rem, 3vw, 2.5rem); font-weight: 15;
+  color: var(--navy); text-align: left; 
+  }
+
+
+
 /* ===== SECTION HEADERS ===== */
 .section-label {
   display: block; color: var(--gold);
