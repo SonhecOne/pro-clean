@@ -438,30 +438,62 @@ img {
 
 /* ===== SERVICE AREAS ===== */
 .service-areas {
-  position: relative; overflow: hidden; padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
   background: var(--navy);
 }
-.areas-content { position: relative; z-index: 2; }
+
+.areas-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* CONTENEDOR DEL VIDEO */
 .areas-bg {
-  position: absolute; inset: 0; z-index: 1; overflow: hidden;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
 }
+
+/* VIDEO */
+.areas-bg video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.5) contrast(1.1) saturate(1.1);
+}
+
+/* OVERLAY OSCURO + COLOR */
 .areas-bg::before {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(120deg, #47ff84, #00ffb3, #0ea5e9, #92bcff, #80a6ff);
-  background-size: 300% 300%;
-  animation: gradientMove 5s ease infinite; opacity: 0.4;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.103),
+    rgba(66, 54, 110, 0.85)
+  );
+  z-index: 2;
 }
+
+/* PUNTOS ANIMADOS (encima del video) */
 .areas-bg::after {
-  content: ""; position: absolute; inset: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 30px 30px; opacity: 0.08;
+  background-size: 30px 30px;
+  opacity: 0.08;
   animation: moveDots 40s linear infinite;
+  z-index: 2;
 }
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 @keyframes moveDots {
   0% { transform: translateY(0); }
   100% { transform: translateY(-60px); }
@@ -488,7 +520,6 @@ img {
   color: var(--white); margin-bottom: 1rem;
 }
 .cta-box p { color: rgba(255,255,255,0.6); margin-bottom: 2rem; }
-
 /* ===== CONTACT ===== */
 .contact-page { padding: 120px 0 80px; }
 .contact-grid {
