@@ -267,7 +267,7 @@ img {
   }
 
 /* ===== SERVICE PAGE SECTIONS ===== */
-.sp-section { padding: 5rem 0; }
+.sp-section { padding: 5rem 0; color: var(--navy);}
 .sp-section-gray { background: var(--gray-100); }
 
 .sp-title {
