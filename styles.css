@@ -609,3 +609,17 @@ img {
   .service-page-hero { min-height: 50vh; }
   .service-page-hero-content { padding: 6rem 0 3rem; }
 }
+
+
+
+/* Flecha */
+.dropdown-toggle .arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Animación al hacer hover */
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
