@@ -4,6 +4,7 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
+  --contacto: #5e88fc;
   --navy: #1e2538;
   --nava: #ffffff;
   --navy-light: #86b4ff;
@@ -36,7 +37,12 @@ body {
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
-img { max-width: 100%; display: block; }
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  margin: 20px auto;
+}
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
