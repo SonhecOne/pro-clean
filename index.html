@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PRO-CLEAN HC INC - Services de nettoyage résidentiels et commerciaux professionnels. Obtenez une soumission gratuite dès aujourd'hui.">
-  <title>Service Pro Clean | Services de nettoyage professionnels</title>
+  <meta name="description" content="PRO-CLEAN HC INC - Services de nettoyage résidentiels et commerciaux à Lévis et Québec. Soumission gratuite, service fiable et résultats impeccables.">
+  <title>PRO-CLEAN HC INC | Services de nettoyage professionnels</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container navbar-inner">
     <a href="index.html" class="logo">PRO-CLEAN HC INC</a>
+
     <div class="nav-links">
       <a href="index.html">Accueil</a>
-      
-      
       <div class="dropdown">
         <a href="#services" class="dropdown-toggle">Services <span class="arrow">▼</span></a>
         <div class="dropdown-menu">
@@ -26,71 +24,152 @@
           <a href="custom-services.html">Autres services</a>
         </div>
       </div>
-
       <a href="#about">À propos</a>
+      <a href="#testimonials">Avis</a>
       <a href="#contact">Contact</a>
-      <a href="contact.html" class="btn-gold">Obtenir une soumission gratuite</a>
+      <a href="contact.html" class="btn-gold">Obtenir une soumission</a>
     </div>
-    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+
+    <button
+      class="mobile-toggle"
+      id="mobileToggle"
+      type="button"
+      onclick="toggleMenu()"
+      aria-label="Ouvrir le menu"
+      aria-controls="mobileMenu"
+      aria-expanded="false"
+    >
+      &#9776;
+    </button>
   </div>
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html" onclick="closeMenu()">Accueil</a>
-    
     <div class="mobile-dropdown">
-      <p class="mobile-dropdown-label">Nos Services :</p>
-      <a href="regular-cleaning.html" onclick="closeMenu()">- Entretien régulier</a>
-      <a href="deep-cleaning.html" onclick="closeMenu()">- Grand ménage</a>
-      <a href="window-cleaning.html" onclick="closeMenu()">- Nettoyage de vitres</a>
-      <a href="custom-services.html" onclick="closeMenu()">- Autres services</a>
+      <p class="mobile-dropdown-label">Nos services</p>
+      <a href="regular-cleaning.html" onclick="closeMenu()">Entretien régulier</a>
+      <a href="deep-cleaning.html" onclick="closeMenu()">Grand ménage</a>
+      <a href="window-cleaning.html" onclick="closeMenu()">Nettoyage de vitres</a>
+      <a href="custom-services.html" onclick="closeMenu()">Autres services</a>
     </div>
-
     <a href="#about" onclick="closeMenu()">À propos</a>
+    <a href="#testimonials" onclick="closeMenu()">Avis</a>
     <a href="#contact" onclick="closeMenu()">Contact</a>
-    <a href="contact.html" class="btn-gold" style="text-align:center;margin-top:0.5rem" onclick="closeMenu()">Obtenir une soumission gratuite</a>
+    <a href="contact.html" class="btn-gold" style="text-align:center;margin-top:0.5rem" onclick="closeMenu()">Obtenir une soumission</a>
+
+    <div class="mobile-contact">
+      <h4>Contact</h4>
+      <p>Hugo Chinchilla - (418) 999-0220</p>
+      <p>Paola Castilla - (418) 951-9012</p>
+      <p>hugochi20@hotmail.com</p>
+    </div>
   </div>
 </nav>
 
-
-
-<!-- HERO -->
-<section class="hero">
+<header class="hero">
   <div class="hero-bg"></div>
-  <div class="hero-content">
-    <span class="hero-badge">Fiable & Professionnel</span>
-    <h1>Services de <span class="gold-text">nettoyage professionnels</span></h1>
-    <p>Nettoyage résidentiel et commercial fiable, adapté à vos besoins. Découvrez la différence avec Pro-Clean HC INC.</p>
-    <a href="#contact" class="btn-gold btn-gold-lg">Obtenir une soumission gratuite</a>
+  <div class="container hero-layout">
+    <div class="hero-content hero-copy">
+      <span class="hero-badge">Résidentiel et commercial</span>
+      <h1>Un service de <span class="gold-text">nettoyage haut de gamme</span> pensé pour votre tranquillité</h1>
+      <p>
+        PRO-CLEAN HC INC offre un nettoyage fiable, minutieux et flexible pour les maisons,
+        bureaux et espaces commerciaux à Lévis, Québec et les environs.
+      </p>
+
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-gold btn-gold-lg">Demander une soumission</a>
+        <a href="#services" class="hero-link">Découvrir nos services</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>Service rapide</strong>
+          <span>Réponse simple et personnalisée</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Travail soigné</strong>
+          <span>Attention aux détails dans chaque pièce</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Équipe fiable</strong>
+          <span>Ponctualité, respect et constance</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="hero-panel fade-up">
+      <span class="hero-panel-label">Pourquoi nous choisir</span>
+      <h2>Une expérience propre, claire et sans stress</h2>
+      <ul class="hero-checklist">
+        <li>Soumission gratuite et sans engagement</li>
+        <li>Nettoyage adapté à votre horaire et à vos priorités</li>
+        <li>Produits et méthodes sécuritaires pour votre espace</li>
+        <li>Service humain, professionnel et constant</li>
+      </ul>
+      <a href="contact.html" class="hero-panel-link">Planifier votre nettoyage</a>
+    </aside>
   </div>
   <div class="hero-fade"></div>
+</header>
+
+<section class="proof-strip">
+  <div class="container proof-grid">
+    <div class="proof-item fade-up">
+      <strong>Résidentiel</strong>
+      <span>Maisons, condos et appartements</span>
+    </div>
+    <div class="proof-item fade-up">
+      <strong>Commercial</strong>
+      <span>Bureaux, locaux et espaces professionnels</span>
+    </div>
+    <div class="proof-item fade-up">
+      <strong>Nettoyage spécialisé</strong>
+      <span>Après rénovation, déménagement et besoins sur mesure</span>
+    </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
-  <div class="container">
-    <div class="fade-up">
-      <span class="section-label">À propos de nous</span>
-      <h2 class="section-title2">Un espace propre, une meilleure vie</h2>
-      <p class="about-text">Chez Service Pro Clean, nous croyons qu’un environnement propre transforme votre quotidien. Forts de plusieurs années d’expérience, notre équipe professionnelle offre une attention méticuleuse aux détails, une fiabilité sur laquelle vous pouvez compter et des résultats qui dépassent les attentes — à chaque fois.</p>
+  <div class="container about-showcase">
+    <div class="about-visual fade-img">
+      <img src="img/casa-limpia-1.jpg" alt="Intérieur propre et lumineux après un service de nettoyage">
     </div>
+
+    <div class="about-copy fade-up">
+      <span class="section-label section-label-left">À propos de nous</span>
+      <h2 class="section-title2 section-title-left">Un espace impeccable change l'énergie de votre quotidien</h2>
+      <p class="about-text about-text-left">
+        Chez PRO-CLEAN HC INC, nous croyons qu'un bon service va bien au-delà du simple nettoyage.
+        Nous créons des environnements accueillants, sains et bien entretenus, avec une approche
+        professionnelle qui respecte votre temps, votre budget et vos attentes.
+      </p>
+      <p class="about-text about-text-left">
+        Chaque intervention est pensée pour vous offrir plus de confort, plus de constance
+        et une vraie paix d'esprit, que ce soit pour votre maison ou votre entreprise.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="highlights fade-up">
       <div class="highlight-card">
         <div class="highlight-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <span>Assuré & cautionné</span>
+        <span>Assuré et fiable</span>
       </div>
       <div class="highlight-card">
         <div class="highlight-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <span>Ponctualité garantie</span>
+        <span>Horaire flexible</span>
       </div>
       <div class="highlight-card">
         <div class="highlight-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path></svg>
         </div>
-        <span>Produits écologiques</span>
+        <span>Résultats impeccables</span>
       </div>
     </div>
   </div>
@@ -98,141 +177,148 @@
 
 <section class="services" id="services">
   <div class="container">
-
-    <!-- HEADER -->
     <div class="fade-up">
       <span class="section-label">Ce que nous offrons</span>
-      <h2 class="section-title2">Nos services</h2>
+      <h2 class="section-title2">Des services conçus pour chaque besoin</h2>
     </div>
 
-    <!-- GRID DE SERVICIOS -->
     <div class="services-grid">
-
-      <div class="service-card fade-up">
+      <article class="service-card fade-up">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M3 11h18"/><path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M6 11l1 8h10l1-8"/></svg>
+        </div>
         <h3>Entretien ménager régulier</h3>
-        <p>
-          Un service complet pour maintenir la propreté de votre maison ou bureau.
-          Nous prenons en charge la cuisine, les salles de bain, l’époussetage et
-          toutes les tâches essentielles pour un environnement toujours impeccable.
-        </p>
-        <a href="regular-cleaning.html" class="service-link">En savoir plus →</a>
-      </div>
+        <p>Une routine de nettoyage fiable pour garder votre maison ou votre bureau propre, frais et accueillant semaine après semaine.</p>
+        <a href="regular-cleaning.html" class="service-link">En savoir plus</a>
+      </article>
 
-      <div class="service-card fade-up">
+      <article class="service-card fade-up">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="m4 20 4-9"/><path d="m20 20-4-9"/><path d="M12 4v16"/><path d="M8 11h8"/></svg>
+        </div>
         <h3>Grand ménage</h3>
-        <p>
-          Un nettoyage en profondeur qui transforme complètement votre espace.
-          Nous nettoyons murs, plafonds, cuisines et salles de bain dans les moindres
-          détails pour un résultat impeccable, résidentiel ou commercial.
-        </p>
-        <a href="deep-cleaning.html" class="service-link">En savoir plus →</a>
-      </div>
+        <p>Un nettoyage en profondeur pour remettre votre espace à neuf et atteindre les zones qui demandent plus d'attention.</p>
+        <a href="deep-cleaning.html" class="service-link">En savoir plus</a>
+      </article>
 
-      <div class="service-card fade-up">
+      <article class="service-card fade-up">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 10h16"/><path d="M10 4v16"/></svg>
+        </div>
         <h3>Nettoyage de vitres</h3>
-        <p>
-          Profitez de vitres parfaitement propres pour une luminosité maximale.
-          Service intérieur et extérieur incluant moustiquaires et cadrages,
-          pour un résultat sans traces.
-        </p>
-        <a href="window-cleaning.html" class="service-link">En savoir plus →</a>
-      </div>
+        <p>Des vitres propres et lumineuses à l'intérieur comme à l'extérieur, avec un fini net, soigné et sans traces.</p>
+        <a href="window-cleaning.html" class="service-link">En savoir plus</a>
+      </article>
 
-      <div class="service-card fade-up">
-        <h3>Autres services</h3>
-        <p>
-          Nettoyage après rénovation, avant ou après déménagement, et services
-          spécialisés adaptés à vos besoins pour un espace propre et prêt à vivre.
-        </p>
-        <a href="custom-services.html" class="service-link">En savoir plus →</a>
-      </div>
-
+      <article class="service-card fade-up">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M12 3v18"/><path d="M3 12h18"/><path d="m5.6 5.6 12.8 12.8"/><path d="m18.4 5.6-12.8 12.8"/></svg>
+        </div>
+        <h3>Services sur mesure</h3>
+        <p>Après rénovation, déménagement ou demande particulière, nous adaptons le service à votre réalité et à votre espace.</p>
+        <a href="custom-services.html" class="service-link">En savoir plus</a>
+      </article>
     </div>
 
-    <!-- IMAGEN DESTACADA -->
     <div class="services-image fade-img">
-      <img src="img/limpieza-de-oficinas.jpg" alt="Nettoyage professionnel">
+      <img src="img/limpieza-de-oficinas.jpg" alt="Professionnel en nettoyage dans un environnement commercial">
     </div>
-
   </div>
 </section>
 
-
-
-<section class="testimonials">
+<section class="why-us">
   <div class="container">
+    <div class="fade-up">
+      <span class="section-label">Notre méthode</span>
+      <h2 class="section-title">Une approche simple, efficace et professionnelle</h2>
+    </div>
 
+    <div class="why-grid">
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M6 6v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6"/></svg>
+        </div>
+        <h3>Évaluation claire</h3>
+        <p>Nous comprenons vos besoins et préparons une soumission adaptée à votre espace.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M8 7V3"/><path d="M16 7V3"/><path d="M4 11h16"/><rect x="3" y="5" width="18" height="16" rx="2"/></svg>
+        </div>
+        <h3>Planification flexible</h3>
+        <p>Nous organisons le service au moment qui convient le mieux à votre routine.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg>
+        </div>
+        <h3>Exécution soignée</h3>
+        <p>Chaque zone est traitée avec rigueur, méthode et une vraie attention aux détails.</p>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Satisfaction durable</h3>
+        <p>Notre objectif est de laisser un résultat visible, constant et rassurant à chaque visite.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
     <div class="fade-up">
       <span class="section-label">Témoignages</span>
       <h2 class="section-title2">Ce que disent nos clients</h2>
     </div>
 
     <div class="testimonials-grid">
-
       <div class="testimonial-card fade-up">
-        <p>
-          “Service impeccable ! L’équipe est arrivée à l’heure et le résultat
-          était parfait. Je recommande fortement.”
-        </p>
+        <p>Service impeccable. L'équipe a été ponctuelle, respectueuse et le résultat final était vraiment au-dessus de mes attentes.</p>
         <div class="client">
+          <div class="stars">★★★★★</div>
           <strong>Marie L.</strong>
           <span>Québec</span>
-          <div class="stars">★★★★★</div>
         </div>
       </div>
 
       <div class="testimonial-card fade-up">
-        <p>
-          “Très professionnel et efficace. Ma maison n’a jamais été aussi propre.”
-        </p>
+        <p>Très professionnel, très efficace et facile à planifier. La maison était propre jusque dans les détails.</p>
         <div class="client">
+          <div class="stars">★★★★★</div>
           <strong>Jean P.</strong>
           <span>Lévis</span>
-          <div class="stars">★★★★★</div>
         </div>
       </div>
 
       <div class="testimonial-card fade-up">
-        <p>
-          “Excellent service après rénovation. Tout était parfaitement nettoyé.”
-        </p>
+        <p>Excellent service après rénovation. Tout était prêt, propre et agréable dès la fin de l'intervention.</p>
         <div class="client">
+          <div class="stars">★★★★★</div>
           <strong>Sophie R.</strong>
           <span>Sainte-Foy</span>
-          <div class="stars">★★★★★</div>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
 
-
-
-
 <section class="service-areas">
-
-  <!-- FONDO -->
- <div class="areas-bg">
-     <video autoplay muted loop playsinline>
+  <div class="areas-bg">
+    <video autoplay muted loop playsinline>
       <source src="img/256963_small.mp4" type="video/mp4">
     </video>
   </div>
 
-
   <div class="container areas-content">
-
     <div class="section-header fade-up">
       <span class="section-label">Zones desservies</span>
-      <h2 class="section-title">Nos zones de service</h2>
-      <p class="section-subtitle">
-        Nous offrons nos services dans les zones suivantes :
-      </p>
+      <h2 class="section-title">Nous desservons Lévis, Québec et les environs</h2>
+      <p class="section-subtitle">Nous nous déplaçons dans plusieurs secteurs pour offrir un service rapide, flexible et professionnel.</p>
     </div>
 
     <div class="areas-grid">
-
       <div class="area-item">Boischatel</div>
       <div class="area-item">Sainte-Foy</div>
       <div class="area-item">Sillery</div>
@@ -251,31 +337,29 @@
       <div class="area-item">Saint-Nicolas</div>
       <div class="area-item">Saint-Romuald</div>
       <div class="area-item">Saint-Étienne-de-Lauzon</div>
-
     </div>
-
   </div>
 </section>
 
 <section class="cta-section" id="contact">
-
   <div class="container">
     <div class="cta-box fade-up">
-      <h2>Obtenez votre estimation gratuite dès aujourd’hui</h2>
-      <p>Prêt pour un espace impeccable ? Contactez-nous pour une soumission personnalisée — sans engagement.</p>
-      <a href="contact.html" class="btn-gold btn-gold-lg">Contactez-nous</a>
+      <h2>Obtenez votre estimation gratuite dès aujourd'hui</h2>
+      <p>Besoin d'un nettoyage ponctuel ou régulier? Écrivez-nous et nous vous proposerons une solution simple, claire et adaptée à votre espace.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-gold btn-gold-lg">Demander une soumission</a>
+        <a href="mailto:hugochi20@hotmail.com" class="cta-secondary-link">hugochi20@hotmail.com</a>
+      </div>
     </div>
   </div>
 </section>
 
-
-<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
         <div class="footer-logo">PRO-CLEAN <span>HC INC</span></div>
-        <p class="footer-description">Services de nettoyage professionnels résidentiels et commerciaux. Qualité, fiabilité et satisfaction garantie.</p>
+        <p class="footer-description">Services de nettoyage résidentiels et commerciaux avec une approche professionnelle, humaine et constante.</p>
       </div>
       <div class="footer-col">
         <h4>Adresse</h4>
@@ -290,43 +374,60 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Hugo Chinchilla — (418) 999-0220</p>
-        <p>Paola Castilla — (418) 951-9012</p>
+        <p>Hugo Chinchilla - (418) 999-0220</p>
+        <p>Paola Castilla - (418) 951-9012</p>
         <p>hugochi20@hotmail.com</p>
       </div>
       <div class="footer-col">
         <h4>Suivez-nous</h4>
         <div class="social-links">
-          <a href="https://www.facebook.com/share/1B8e7nKV3z/?mibextid=wwXIfr">Facebook</a>
-          <a href="https://www.instagram.com/procleanhcinc/?hl=es">Instagram</a>
-          <a href="https://api.whatsapp.com/send/?phone=14189990220&text=Bonjour%2C+je+souhaite+obtenir+une+soumission+pour+un+nettoyage.&type=phone_number&app_absent=0">WhatsApp</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Pro-Clean HC INC. Tous droits réservés.</p>
+      <p>&copy; 2026 PRO-CLEAN HC INC. Tous droits réservés.</p>
     </div>
   </div>
 </footer>
 
 <script>
+const navbar = document.getElementById('navbar');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileToggle = document.getElementById('mobileToggle');
+
 window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
 });
 
 function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
+  const isOpen = mobileMenu.classList.toggle('open');
+  mobileToggle.setAttribute('aria-expanded', String(isOpen));
 }
+
 function closeMenu() {
-  document.getElementById('mobileMenu').classList.remove('open');
+  mobileMenu.classList.remove('open');
+  mobileToggle.setAttribute('aria-expanded', 'false');
 }
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    closeMenu();
+  }
+});
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.fade-img').forEach(el => observer.observe(el));
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-img, .fade-up').forEach((element) => observer.observe(element));
 </script>
 
 </body>
